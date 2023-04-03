@@ -62,9 +62,9 @@ module "ALB" {
 
 module "AutoScaling" {
   source            = "./modules/Autoscaling"
-  ami-web           = lookup(var.ami, var.region, "ami-0d1ddd83282187d18")
-  ami-bastion       = lookup(var.ami, var.region, "ami-0d1ddd83282187d18")
-  ami-nginx         = lookup(var.ami, var.region, "ami-0d1ddd83282187d18")
+  ami-web           = lookup(var.ami, var.region, "ami-06a85f5e943da0183")
+  ami-bastion       = lookup(var.ami, var.region, "ami-0d490213685c0058b")
+  ami-nginx         = lookup(var.ami, var.region, "ami-05eb9b2efd9c53c25")
   desired_capacity  = 2
   min_size          = 2
   max_size          = 2
