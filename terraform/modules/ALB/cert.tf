@@ -1,14 +1,22 @@
 # The entire section create a certificate, public zone, and validate the certificate using DNS method
 
-resource "aws_route53_zone" "toolingsite" {
-  name = "toolingsite.tk"
-}
-
 # Create the certificate using a wildcard for all the domains created in toolingsite.tk
 resource "aws_acm_certificate" "toolingsite" {
-  domain_name       = "*.toolingsite.tk"
+  domain_name       = "tools.travelplaceng.com"
   validation_method = "DNS"
+  subject_alternative_names = ["*.tools.travelplaceng.com"]
+  
+    lifecycle {
+    create_before_destroy = true
+  }
 }
+
+
+resource "aws_route53_zone" "toolingsite" {
+  name = "tools.travelplaceng.com"
+  # private_zone = false
+}
+
 
 # selecting validation method
 resource "aws_route53_record" "toolingsite" {
@@ -37,7 +45,7 @@ resource "aws_acm_certificate_validation" "toolingsite" {
 # create records for tooling
 resource "aws_route53_record" "tooling" {
   zone_id = aws_route53_zone.toolingsite.zone_id
-  name    = "tooling.toolingsite.tk"
+  name    = "tooling.tools.travelplaceng.com"
   type    = "A"
 
   alias {
@@ -50,7 +58,7 @@ resource "aws_route53_record" "tooling" {
 # create records for wordpress
 resource "aws_route53_record" "wordpress" {
   zone_id = aws_route53_zone.toolingsite.zone_id
-  name    = "wordpress.toolingsite.tk"
+  name    = "wordpress.tools.travelplaceng.com"
   type    = "A"
 
   alias {

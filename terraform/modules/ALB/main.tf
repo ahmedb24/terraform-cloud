@@ -67,7 +67,7 @@ resource "aws_lb" "ialb" {
   subnets = [var.private-sbn-1,
   var.private-sbn-2, ]
 
-    tags = merge(
+  tags = merge(
     var.tags,
     {
       Name = "ACS-int-alb"
@@ -91,12 +91,12 @@ resource "aws_lb_target_group" "wordpress-tgt" {
     unhealthy_threshold = 2
   }
 
-  name     = "wordpress-tgt"
-   port        = 443
+  name        = "wordpress-tgt"
+  port        = 443
   protocol    = "HTTPS"
   target_type = "instance"
   vpc_id      = var.vpc_id
-  }
+}
 
 
 

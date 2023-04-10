@@ -2,25 +2,25 @@
 ##Creating bucket for s3 backend
 #########################
 
-resource "aws_s3_bucket" "terraform-state" {
-  bucket        = "terraform-ahmed-dev"
-}
+# resource "aws_s3_bucket" "terraform-state" {
+#   bucket        = "terraform-ahmed-dev"
+# }
 
-resource "aws_s3_bucket_versioning" "version" {
-  bucket = aws_s3_bucket.terraform-state.id
-  versioning_configuration {
-    status = "Enabled"
-  }
-}
+# resource "aws_s3_bucket_versioning" "version" {
+#   bucket = aws_s3_bucket.terraform-state.id
+#   versioning_configuration {
+#     status = "Enabled"
+#   }
+# }
 
-resource "aws_s3_bucket_server_side_encryption_configuration" "first" {
-  bucket = aws_s3_bucket.terraform-state.id
-  rule {
-    apply_server_side_encryption_by_default {
-      sse_algorithm = "AES256"
-    }
-  }
-}
+# resource "aws_s3_bucket_server_side_encryption_configuration" "first" {
+#   bucket = aws_s3_bucket.terraform-state.id
+#   rule {
+#     apply_server_side_encryption_by_default {
+#       sse_algorithm = "AES256"
+#     }
+#   }
+# }
 
 
 # Creating VPC
@@ -61,12 +61,15 @@ module "ALB" {
 }
 
 module "AutoScaling" {
-  source            = "./modules/Autoscaling"
-  ami-web           = lookup(var.ami, var.region, "ami-06a85f5e943da0183")
-  ami-bastion       = lookup(var.ami, var.region, "ami-0d490213685c0058b")
-  ami-nginx         = lookup(var.ami, var.region, "ami-05eb9b2efd9c53c25")
-  desired_capacity  = 2
-  min_size          = 2
+  source = "./modules/Autoscaling"
+  # ami-web           = lookup(var.ami, var.region, "ami-066fe873bf6478b40")
+  # ami-bastion       = lookup(var.ami, var.region, "ami-028fa79f6e6052a9c")
+  # ami-nginx         = lookup(var.ami, var.region, "ami-0e57ecde442b59faa")
+  ami-web           = "ami-056b54a89db4a0bf6"
+  ami-bastion       = "ami-03681f5cdfd77f740"
+  ami-nginx         = "ami-0d3d547a83045d665"
+  desired_capacity  = 1
+  min_size          = 1
   max_size          = 2
   web-sg            = [module.security.web-sg]
   bastion-sg        = [module.security.bastion-sg]
@@ -84,11 +87,11 @@ module "AutoScaling" {
 # Module for Elastic Filesystem; this module will create elastic file system in the webservers availablity
 # zone and allow traffic from the webservers
 
-module "EFS" {
-  source       = "./modules/EFS"
-  efs-subnet-1 = module.VPC.private_subnets-1
-  efs-subnet-2 = module.VPC.private_subnets-2
-  efs-sg       = [module.security.datalayer-sg]
-  account_no   = var.account_no
-}
+# module "EFS" {
+#   source       = "./modules/EFS"
+#   efs-subnet-1 = module.VPC.private_subnets-1
+#   efs-subnet-2 = module.VPC.private_subnets-2
+#   efs-sg       = [module.security.datalayer-sg]
+#   account_no   = var.account_no
+# }
 

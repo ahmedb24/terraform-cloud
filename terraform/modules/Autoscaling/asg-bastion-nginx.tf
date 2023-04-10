@@ -46,7 +46,7 @@ resource "aws_autoscaling_group" "bastion-asg" {
   desired_capacity          = var.desired_capacity
 
   vpc_zone_identifier = var.public_subnets
-  
+
 
 
   launch_template {
@@ -72,7 +72,7 @@ resource "aws_autoscaling_group" "nginx-asg" {
   health_check_grace_period = 300
   health_check_type         = "ELB"
   desired_capacity          = 1
-  
+
   vpc_zone_identifier = var.public_subnets
 
 
@@ -93,5 +93,5 @@ resource "aws_autoscaling_group" "nginx-asg" {
 # attaching autoscaling group of nginx to external load balancer
 resource "aws_autoscaling_attachment" "asg_attachment_nginx" {
   autoscaling_group_name = aws_autoscaling_group.nginx-asg.id
-  alb_target_group_arn   = var.nginx-alb-tgt
+  lb_target_group_arn    = var.nginx-alb-tgt
 }

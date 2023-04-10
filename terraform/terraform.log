@@ -1,0 +1,331 @@
+[0m[1mmodule.AutoScaling.aws_sns_topic.ACS-sns: Refreshing state... [id=arn:aws:sns:eu-central-1:767423351130:Default_CloudWatch_Alarms_Topic][0m
+[0m[1mmodule.VPC.aws_iam_role.ec2_instance_role: Refreshing state... [id=ec2_instance_role][0m
+[0m[1mmodule.VPC.aws_iam_policy.policy: Refreshing state... [id=arn:aws:iam::767423351130:policy/ec2_instance_policy][0m
+[0m[1mmodule.ALB.aws_route53_zone.toolingsite: Refreshing state... [id=Z05935223247PNLZXN9E5][0m
+[0m[1mmodule.VPC.data.aws_availability_zones.available: Reading...[0m[0m
+[0m[1mmodule.VPC.aws_vpc.main: Refreshing state... [id=vpc-06233dbbe425a3720][0m
+[0m[1mmodule.AutoScaling.data.aws_availability_zones.available: Reading...[0m[0m
+[0m[1mmodule.ALB.aws_acm_certificate.toolingsite: Refreshing state... [id=arn:aws:acm:eu-central-1:767423351130:certificate/3099da5d-497f-4a72-b52d-af2cc3449107][0m
+[0m[1mmodule.VPC.aws_iam_role_policy_attachment.test-attach: Refreshing state... [id=ec2_instance_role-20230409213003173800000001][0m
+[0m[1mmodule.VPC.aws_iam_instance_profile.ip: Refreshing state... [id=aws_instance_profile_test][0m
+[0m[1mmodule.VPC.data.aws_availability_zones.available: Read complete after 1s [id=eu-central-1][0m
+[0m[1mmodule.VPC.random_shuffle.public_az: Refreshing state... [id=-][0m
+[0m[1mmodule.AutoScaling.data.aws_availability_zones.available: Read complete after 1s [id=eu-central-1][0m
+[0m[1mmodule.AutoScaling.random_shuffle.az_list: Refreshing state... [id=-][0m
+[0m[1mmodule.ALB.aws_route53_record.toolingsite["*.tools.travelplaceng.com"]: Refreshing state... [id=Z05935223247PNLZXN9E5__c1d78067e870e511e9f53208da023228.tools.travelplaceng.com._CNAME][0m
+[0m[1mmodule.ALB.aws_route53_record.toolingsite["tools.travelplaceng.com"]: Refreshing state... [id=Z05935223247PNLZXN9E5__c1d78067e870e511e9f53208da023228.tools.travelplaceng.com._CNAME][0m
+[0m[1mmodule.ALB.aws_acm_certificate_validation.toolingsite: Refreshing state... [id=0001-01-01 00:00:00 +0000 UTC][0m
+[0m[1mmodule.VPC.aws_subnet.private[2]: Refreshing state... [id=subnet-015237242b09e77a8][0m
+[0m[1mmodule.VPC.aws_internet_gateway.ig: Refreshing state... [id=igw-04865d443f475a91e][0m
+[0m[1mmodule.VPC.aws_subnet.public[0]: Refreshing state... [id=subnet-0073d08162dec16d2][0m
+[0m[1mmodule.VPC.aws_route_table.private-rtb: Refreshing state... [id=rtb-0af685d29ff43ab2b][0m
+[0m[1mmodule.VPC.aws_route_table.public-rtb: Refreshing state... [id=rtb-0739c9e59471f698d][0m
+[0m[1mmodule.VPC.aws_subnet.private[1]: Refreshing state... [id=subnet-032673c0fd289c1d9][0m
+[0m[1mmodule.VPC.aws_subnet.public[1]: Refreshing state... [id=subnet-07b4fc7aefd444f6f][0m
+[0m[1mmodule.security.aws_security_group.ACS["bastion-sg"]: Refreshing state... [id=sg-025c8b8dc3563a5dc][0m
+[0m[1mmodule.VPC.aws_subnet.private[3]: Refreshing state... [id=subnet-01d7cacf9aa374063][0m
+[0m[1mmodule.VPC.aws_subnet.private[0]: Refreshing state... [id=subnet-02c8c852d8c4e30d8][0m
+[0m[1mmodule.security.aws_security_group.ACS["datalayer-sg"]: Refreshing state... [id=sg-062e03fed5de672a8][0m
+[0m[1mmodule.security.aws_security_group.ACS["ext-alb-sg"]: Refreshing state... [id=sg-005308e259ebdb5c5][0m
+[0m[1mmodule.security.aws_security_group.ACS["int-alb-sg"]: Refreshing state... [id=sg-0c8635c9d2abb291b][0m
+[0m[1mmodule.security.aws_security_group.ACS["nginx-sg"]: Refreshing state... [id=sg-0fef39ae629e23cc6][0m
+[0m[1mmodule.security.aws_security_group.ACS["webserver-sg"]: Refreshing state... [id=sg-0baa9965c21878fc2][0m
+[0m[1mmodule.VPC.aws_route_table_association.private-subnets-assoc[1]: Refreshing state... [id=rtbassoc-0e5a043199d1952c1][0m
+[0m[1mmodule.ALB.aws_lb_target_group.tooling-tgt: Refreshing state... [id=arn:aws:elasticloadbalancing:eu-central-1:767423351130:targetgroup/tooling-tgt/7541aa5476f1df6a][0m
+[0m[1mmodule.ALB.aws_lb_target_group.wordpress-tgt: Refreshing state... [id=arn:aws:elasticloadbalancing:eu-central-1:767423351130:targetgroup/wordpress-tgt/71260223fcd5ff42][0m
+[0m[1mmodule.VPC.aws_eip.nat_eip: Refreshing state... [id=eipalloc-0bfaed46940d002fc][0m
+[0m[1mmodule.ALB.aws_lb_target_group.nginx-tgt: Refreshing state... [id=arn:aws:elasticloadbalancing:eu-central-1:767423351130:targetgroup/nginx-tgt/ade20c71bf5e6837][0m
+[0m[1mmodule.VPC.aws_route.public-rtb-route: Refreshing state... [id=r-rtb-0739c9e59471f698d1080289494][0m
+[0m[1mmodule.VPC.aws_route_table_association.private-subnets-assoc[2]: Refreshing state... [id=rtbassoc-09f6f692287dadfec][0m
+[0m[1mmodule.VPC.aws_route_table_association.private-subnets-assoc[3]: Refreshing state... [id=rtbassoc-09d02c835bfe4642a][0m
+[0m[1mmodule.VPC.aws_route_table_association.private-subnets-assoc[0]: Refreshing state... [id=rtbassoc-01f7076fbb3c0b921][0m
+[0m[1mmodule.VPC.aws_route_table_association.public-subnets-assoc[1]: Refreshing state... [id=rtbassoc-0f1c7c2a0c4552a3a][0m
+[0m[1mmodule.VPC.aws_route_table_association.public-subnets-assoc[0]: Refreshing state... [id=rtbassoc-04e0630a9f1153147][0m
+[0m[1mmodule.security.aws_security_group_rule.inbound-ssh-bastion: Refreshing state... [id=sgrule-2695493909][0m
+[0m[1mmodule.security.aws_security_group_rule.inbound-alb-http: Refreshing state... [id=sgrule-2299622084][0m
+[0m[1mmodule.security.aws_security_group_rule.inbound-bastion-ssh: Refreshing state... [id=sgrule-2365342535][0m
+[0m[1mmodule.security.aws_security_group_rule.inbound-nginx-http: Refreshing state... [id=sgrule-3738022781][0m
+[0m[1mmodule.security.aws_security_group_rule.inbound-mysql-webserver: Refreshing state... [id=sgrule-2519167425][0m
+[0m[1mmodule.security.aws_security_group_rule.inbound-alb-https: Refreshing state... [id=sgrule-3082742201][0m
+[0m[1mmodule.security.aws_security_group_rule.inbound-web-https: Refreshing state... [id=sgrule-1937938778][0m
+[0m[1mmodule.security.aws_security_group_rule.inbound-mysql-bastion: Refreshing state... [id=sgrule-3342208734][0m
+[0m[1mmodule.security.aws_security_group_rule.inbound-web-ssh: Refreshing state... [id=sgrule-2062556811][0m
+[0m[1mmodule.security.aws_security_group_rule.inbound-ialb-https: Refreshing state... [id=sgrule-2096147142][0m
+[0m[1mmodule.security.aws_security_group_rule.inbound-nfs-port: Refreshing state... [id=sgrule-98689355][0m
+[0m[1mmodule.ALB.aws_lb.ialb: Refreshing state... [id=arn:aws:elasticloadbalancing:eu-central-1:767423351130:loadbalancer/app/ialb/6471eccb4addc4da][0m
+[0m[1mmodule.VPC.aws_nat_gateway.nat: Refreshing state... [id=nat-0228b74fb324540ba][0m
+[0m[1mmodule.AutoScaling.aws_launch_template.tooling-launch-template: Refreshing state... [id=lt-069b9c9b3a31de667][0m
+[0m[1mmodule.AutoScaling.aws_launch_template.wordpress-launch-template: Refreshing state... [id=lt-016d853f20268b086][0m
+[0m[1mmodule.AutoScaling.aws_launch_template.nginx-launch-template: Refreshing state... [id=lt-0907a860b5ff38f6c][0m
+[0m[1mmodule.AutoScaling.aws_launch_template.bastion-launch-template: Refreshing state... [id=lt-025eeacac10b5671c][0m
+[0m[1mmodule.ALB.aws_lb.ext-alb: Refreshing state... [id=arn:aws:elasticloadbalancing:eu-central-1:767423351130:loadbalancer/app/ACS-ext-alb/54abca0c0a612040][0m
+[0m[1mmodule.VPC.aws_route.private-rtb-route: Refreshing state... [id=r-rtb-0af685d29ff43ab2b1080289494][0m
+[0m[1mmodule.ALB.aws_lb_listener.web-listener: Refreshing state... [id=arn:aws:elasticloadbalancing:eu-central-1:767423351130:listener/app/ialb/6471eccb4addc4da/c2a41f156af9d2c1][0m
+[0m[1mmodule.ALB.aws_route53_record.tooling: Refreshing state... [id=Z05935223247PNLZXN9E5_tooling.tools.travelplaceng.com_A][0m
+[0m[1mmodule.ALB.aws_lb_listener.nginx-listner: Refreshing state... [id=arn:aws:elasticloadbalancing:eu-central-1:767423351130:listener/app/ACS-ext-alb/54abca0c0a612040/da9727f440c0623a][0m
+[0m[1mmodule.ALB.aws_route53_record.wordpress: Refreshing state... [id=Z05935223247PNLZXN9E5_wordpress.tools.travelplaceng.com_A][0m
+[0m[1mmodule.ALB.aws_lb_listener_rule.tooling-listener: Refreshing state... [id=arn:aws:elasticloadbalancing:eu-central-1:767423351130:listener-rule/app/ialb/6471eccb4addc4da/c2a41f156af9d2c1/7c25bb9dee074349][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [32m+[0m create[0m
+  [33m~[0m update in-place[0m
+
+Terraform will perform the following actions:
+
+[1m  # module.AutoScaling.aws_autoscaling_attachment.asg_attachment_nginx[0m will be created
+[0m  [32m+[0m[0m resource "aws_autoscaling_attachment" "asg_attachment_nginx" {
+      [32m+[0m[0m autoscaling_group_name = (known after apply)
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m lb_target_group_arn    = "arn:aws:elasticloadbalancing:eu-central-1:767423351130:targetgroup/nginx-tgt/ade20c71bf5e6837"
+    }
+
+[1m  # module.AutoScaling.aws_autoscaling_attachment.asg_attachment_tooling[0m will be created
+[0m  [32m+[0m[0m resource "aws_autoscaling_attachment" "asg_attachment_tooling" {
+      [32m+[0m[0m autoscaling_group_name = (known after apply)
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m lb_target_group_arn    = "arn:aws:elasticloadbalancing:eu-central-1:767423351130:targetgroup/tooling-tgt/7541aa5476f1df6a"
+    }
+
+[1m  # module.AutoScaling.aws_autoscaling_attachment.asg_attachment_wordpress[0m will be created
+[0m  [32m+[0m[0m resource "aws_autoscaling_attachment" "asg_attachment_wordpress" {
+      [32m+[0m[0m autoscaling_group_name = (known after apply)
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m lb_target_group_arn    = "arn:aws:elasticloadbalancing:eu-central-1:767423351130:targetgroup/wordpress-tgt/71260223fcd5ff42"
+    }
+
+[1m  # module.AutoScaling.aws_autoscaling_group.bastion-asg[0m will be created
+[0m  [32m+[0m[0m resource "aws_autoscaling_group" "bastion-asg" {
+      [32m+[0m[0m arn                       = (known after apply)
+      [32m+[0m[0m availability_zones        = (known after apply)
+      [32m+[0m[0m default_cooldown          = (known after apply)
+      [32m+[0m[0m desired_capacity          = 2
+      [32m+[0m[0m force_delete              = false
+      [32m+[0m[0m force_delete_warm_pool    = false
+      [32m+[0m[0m health_check_grace_period = 300
+      [32m+[0m[0m health_check_type         = "ELB"
+      [32m+[0m[0m id                        = (known after apply)
+      [32m+[0m[0m max_size                  = 2
+      [32m+[0m[0m metrics_granularity       = "1Minute"
+      [32m+[0m[0m min_size                  = 2
+      [32m+[0m[0m name                      = "bastion-asg"
+      [32m+[0m[0m name_prefix               = (known after apply)
+      [32m+[0m[0m protect_from_scale_in     = false
+      [32m+[0m[0m service_linked_role_arn   = (known after apply)
+      [32m+[0m[0m vpc_zone_identifier       = [
+          [32m+[0m[0m "subnet-0073d08162dec16d2",
+          [32m+[0m[0m "subnet-07b4fc7aefd444f6f",
+        ]
+      [32m+[0m[0m wait_for_capacity_timeout = "10m"
+
+      [32m+[0m[0m launch_template {
+          [32m+[0m[0m id      = "lt-025eeacac10b5671c"
+          [32m+[0m[0m name    = (known after apply)
+          [32m+[0m[0m version = "$Latest"
+        }
+
+      [32m+[0m[0m tag {
+          [32m+[0m[0m key                 = "Name"
+          [32m+[0m[0m propagate_at_launch = true
+          [32m+[0m[0m value               = "ACS-bastion"
+        }
+    }
+
+[1m  # module.AutoScaling.aws_autoscaling_group.nginx-asg[0m will be created
+[0m  [32m+[0m[0m resource "aws_autoscaling_group" "nginx-asg" {
+      [32m+[0m[0m arn                       = (known after apply)
+      [32m+[0m[0m availability_zones        = (known after apply)
+      [32m+[0m[0m default_cooldown          = (known after apply)
+      [32m+[0m[0m desired_capacity          = 1
+      [32m+[0m[0m force_delete              = false
+      [32m+[0m[0m force_delete_warm_pool    = false
+      [32m+[0m[0m health_check_grace_period = 300
+      [32m+[0m[0m health_check_type         = "ELB"
+      [32m+[0m[0m id                        = (known after apply)
+      [32m+[0m[0m max_size                  = 2
+      [32m+[0m[0m metrics_granularity       = "1Minute"
+      [32m+[0m[0m min_size                  = 1
+      [32m+[0m[0m name                      = "nginx-asg"
+      [32m+[0m[0m name_prefix               = (known after apply)
+      [32m+[0m[0m protect_from_scale_in     = false
+      [32m+[0m[0m service_linked_role_arn   = (known after apply)
+      [32m+[0m[0m vpc_zone_identifier       = [
+          [32m+[0m[0m "subnet-0073d08162dec16d2",
+          [32m+[0m[0m "subnet-07b4fc7aefd444f6f",
+        ]
+      [32m+[0m[0m wait_for_capacity_timeout = "10m"
+
+      [32m+[0m[0m launch_template {
+          [32m+[0m[0m id      = "lt-0907a860b5ff38f6c"
+          [32m+[0m[0m name    = (known after apply)
+          [32m+[0m[0m version = "$Latest"
+        }
+
+      [32m+[0m[0m tag {
+          [32m+[0m[0m key                 = "Name"
+          [32m+[0m[0m propagate_at_launch = true
+          [32m+[0m[0m value               = "ACS-nginx"
+        }
+    }
+
+[1m  # module.AutoScaling.aws_autoscaling_group.tooling-asg[0m will be created
+[0m  [32m+[0m[0m resource "aws_autoscaling_group" "tooling-asg" {
+      [32m+[0m[0m arn                       = (known after apply)
+      [32m+[0m[0m availability_zones        = (known after apply)
+      [32m+[0m[0m default_cooldown          = (known after apply)
+      [32m+[0m[0m desired_capacity          = 2
+      [32m+[0m[0m force_delete              = false
+      [32m+[0m[0m force_delete_warm_pool    = false
+      [32m+[0m[0m health_check_grace_period = 300
+      [32m+[0m[0m health_check_type         = "ELB"
+      [32m+[0m[0m id                        = (known after apply)
+      [32m+[0m[0m max_size                  = 2
+      [32m+[0m[0m metrics_granularity       = "1Minute"
+      [32m+[0m[0m min_size                  = 2
+      [32m+[0m[0m name                      = "tooling-asg"
+      [32m+[0m[0m name_prefix               = (known after apply)
+      [32m+[0m[0m protect_from_scale_in     = false
+      [32m+[0m[0m service_linked_role_arn   = (known after apply)
+      [32m+[0m[0m vpc_zone_identifier       = [
+          [32m+[0m[0m "subnet-02c8c852d8c4e30d8",
+          [32m+[0m[0m "subnet-032673c0fd289c1d9",
+        ]
+      [32m+[0m[0m wait_for_capacity_timeout = "10m"
+
+      [32m+[0m[0m launch_template {
+          [32m+[0m[0m id      = "lt-069b9c9b3a31de667"
+          [32m+[0m[0m name    = (known after apply)
+          [32m+[0m[0m version = "$Latest"
+        }
+
+      [32m+[0m[0m tag {
+          [32m+[0m[0m key                 = "Name"
+          [32m+[0m[0m propagate_at_launch = true
+          [32m+[0m[0m value               = "ACS-tooling"
+        }
+    }
+
+[1m  # module.AutoScaling.aws_autoscaling_group.wordpress-asg[0m will be created
+[0m  [32m+[0m[0m resource "aws_autoscaling_group" "wordpress-asg" {
+      [32m+[0m[0m arn                       = (known after apply)
+      [32m+[0m[0m availability_zones        = (known after apply)
+      [32m+[0m[0m default_cooldown          = (known after apply)
+      [32m+[0m[0m desired_capacity          = 2
+      [32m+[0m[0m force_delete              = false
+      [32m+[0m[0m force_delete_warm_pool    = false
+      [32m+[0m[0m health_check_grace_period = 300
+      [32m+[0m[0m health_check_type         = "ELB"
+      [32m+[0m[0m id                        = (known after apply)
+      [32m+[0m[0m max_size                  = 2
+      [32m+[0m[0m metrics_granularity       = "1Minute"
+      [32m+[0m[0m min_size                  = 2
+      [32m+[0m[0m name                      = "wordpress-asg"
+      [32m+[0m[0m name_prefix               = (known after apply)
+      [32m+[0m[0m protect_from_scale_in     = false
+      [32m+[0m[0m service_linked_role_arn   = (known after apply)
+      [32m+[0m[0m vpc_zone_identifier       = [
+          [32m+[0m[0m "subnet-02c8c852d8c4e30d8",
+          [32m+[0m[0m "subnet-032673c0fd289c1d9",
+        ]
+      [32m+[0m[0m wait_for_capacity_timeout = "10m"
+
+      [32m+[0m[0m launch_template {
+          [32m+[0m[0m id      = "lt-016d853f20268b086"
+          [32m+[0m[0m name    = (known after apply)
+          [32m+[0m[0m version = "$Latest"
+        }
+
+      [32m+[0m[0m tag {
+          [32m+[0m[0m key                 = "Name"
+          [32m+[0m[0m propagate_at_launch = true
+          [32m+[0m[0m value               = "ACS-wordpress"
+        }
+    }
+
+[1m  # module.AutoScaling.aws_autoscaling_notification.asg_notifications[0m will be created
+[0m  [32m+[0m[0m resource "aws_autoscaling_notification" "asg_notifications" {
+      [32m+[0m[0m group_names   = [
+          [32m+[0m[0m "bastion-asg",
+          [32m+[0m[0m "nginx-asg",
+          [32m+[0m[0m "tooling-asg",
+          [32m+[0m[0m "wordpress-asg",
+        ]
+      [32m+[0m[0m id            = (known after apply)
+      [32m+[0m[0m notifications = [
+          [32m+[0m[0m "autoscaling:EC2_INSTANCE_LAUNCH",
+          [32m+[0m[0m "autoscaling:EC2_INSTANCE_LAUNCH_ERROR",
+          [32m+[0m[0m "autoscaling:EC2_INSTANCE_TERMINATE",
+          [32m+[0m[0m "autoscaling:EC2_INSTANCE_TERMINATE_ERROR",
+        ]
+      [32m+[0m[0m topic_arn     = "arn:aws:sns:eu-central-1:767423351130:Default_CloudWatch_Alarms_Topic"
+    }
+
+[1m  # module.VPC.aws_route.private-rtb-route[0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_route" "private-rtb-route" {
+      [32m+[0m[0m gateway_id             = "nat-0228b74fb324540ba"
+        id                     = "r-rtb-0af685d29ff43ab2b1080289494"
+      [31m-[0m[0m nat_gateway_id         = "nat-0228b74fb324540ba" [90m-> null[0m[0m
+        [90m# (4 unchanged attributes hidden)[0m[0m
+    }
+
+[1mPlan:[0m 8 to add, 1 to change, 0 to destroy.
+[0m[0m[1mmodule.AutoScaling.aws_autoscaling_group.wordpress-asg: Creating...[0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.bastion-asg: Creating...[0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.nginx-asg: Creating...[0m[0m
+[0m[1mmodule.VPC.aws_route.private-rtb-route: Modifying... [id=r-rtb-0af685d29ff43ab2b1080289494][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.tooling-asg: Creating...[0m[0m
+[0m[1mmodule.VPC.aws_route.private-rtb-route: Modifications complete after 1s [id=r-rtb-0af685d29ff43ab2b1080289494][0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.wordpress-asg: Still creating... [10s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.bastion-asg: Still creating... [10s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.nginx-asg: Still creating... [10s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.tooling-asg: Still creating... [10s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.wordpress-asg: Still creating... [20s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.bastion-asg: Still creating... [20s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.nginx-asg: Still creating... [20s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.tooling-asg: Still creating... [20s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.wordpress-asg: Still creating... [30s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.bastion-asg: Still creating... [30s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.nginx-asg: Still creating... [30s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.tooling-asg: Still creating... [30s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.tooling-asg: Creation complete after 37s [id=tooling-asg][0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_attachment.asg_attachment_tooling: Creating...[0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_attachment.asg_attachment_tooling: Creation complete after 1s [id=tooling-asg-20230409223633487000000001][0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.wordpress-asg: Still creating... [40s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.bastion-asg: Still creating... [40s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.nginx-asg: Still creating... [40s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.nginx-asg: Creation complete after 47s [id=nginx-asg][0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_attachment.asg_attachment_nginx: Creating...[0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_attachment.asg_attachment_nginx: Creation complete after 1s [id=nginx-asg-20230409223643692600000002][0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.wordpress-asg: Still creating... [50s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.bastion-asg: Still creating... [50s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.wordpress-asg: Still creating... [1m0s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.bastion-asg: Still creating... [1m0s elapsed][0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.wordpress-asg: Creation complete after 1m9s [id=wordpress-asg][0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_attachment.asg_attachment_wordpress: Creating...[0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_attachment.asg_attachment_wordpress: Creation complete after 1s [id=wordpress-asg-20230409223704897300000003][0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_group.bastion-asg: Creation complete after 1m10s [id=bastion-asg][0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_notification.asg_notifications: Creating...[0m[0m
+[0m[1mmodule.AutoScaling.aws_autoscaling_notification.asg_notifications: Creation complete after 2s [id=arn:aws:sns:eu-central-1:767423351130:Default_CloudWatch_Alarms_Topic][0m
+[33m╷[0m[0m
+[33m│[0m [0m[1m[33mWarning: [0m[0m[1mValue for undeclared variable[0m
+[33m│[0m [0m
+[33m│[0m [0m[0mThe root module does not declare a variable named "environment" but a value was found in file "terraform.auto.tfvars". If you meant to use
+[33m│[0m [0mthis value, add a "variable" block to the configuration.
+[33m│[0m [0m
+[33m│[0m [0mTo silence these warnings, use TF_VAR_... environment variables to provide certain "global" settings to all configurations in your
+[33m│[0m [0morganization. To reduce the verbosity of these warnings, use the -compact-warnings option.
+[33m╵[0m[0m
+[33m╷[0m[0m
+[33m│[0m [0m[1m[33mWarning: [0m[0m[1mArgument is deprecated[0m
+[33m│[0m [0m
+[33m│[0m [0m[0m  with module.VPC.aws_vpc.main,
+[33m│[0m [0m  on modules/VPC/main.tf line 16, in resource "aws_vpc" "main":
+[33m│[0m [0m  16:   enable_classiclink             = [4mvar.enable_classiclink[0m[0m
+[33m│[0m [0m
+[33m│[0m [0mWith the retirement of EC2-Classic the enable_classiclink attribute has been deprecated and will be removed in a future version.
+[33m│[0m [0m
+[33m│[0m [0m(and one more similar warning elsewhere)
+[33m╵[0m[0m
+[0m[1m[32m
+Apply complete! Resources: 8 added, 1 changed, 0 destroyed.
+[0m

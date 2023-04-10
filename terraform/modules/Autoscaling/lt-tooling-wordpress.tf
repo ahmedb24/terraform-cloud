@@ -23,15 +23,15 @@ resource "aws_launch_template" "wordpress-launch-template" {
   tag_specifications {
     resource_type = "instance"
 
-  tags = merge(
-    var.tags,
-    {
-      Name = "wordpress-launch-template"
-    },
-  )
+    tags = merge(
+      var.tags,
+      {
+        Name = "wordpress-launch-template"
+      },
+    )
   }
 
-  user_data = filebase64("${path.module}/wordpress.sh")
+  # user_data = filebase64("${path.module}/wordpress.sh")
 }
 
 
@@ -60,13 +60,13 @@ resource "aws_launch_template" "tooling-launch-template" {
     resource_type = "instance"
 
 
- tags = merge(
-    var.tags,
-    {
-      Name = "tooling-launch-template"
-    },
-  )
+    tags = merge(
+      var.tags,
+      {
+        Name = "tooling-launch-template"
+      },
+    )
   }
 
-  user_data = filebase64("${path.module}/tooling.sh")
+  # user_data = filebase64("${path.module}/tooling.sh")
 }
