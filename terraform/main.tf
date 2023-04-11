@@ -65,9 +65,9 @@ module "AutoScaling" {
   # ami-web           = lookup(var.ami, var.region, "ami-066fe873bf6478b40")
   # ami-bastion       = lookup(var.ami, var.region, "ami-028fa79f6e6052a9c")
   # ami-nginx         = lookup(var.ami, var.region, "ami-0e57ecde442b59faa")
-  ami-web           = "ami-056b54a89db4a0bf6"
-  ami-bastion       = "ami-03681f5cdfd77f740"
-  ami-nginx         = "ami-0d3d547a83045d665"
+  ami-web           = "ami-0158eafefcf9c1918"
+  ami-bastion       = "ami-066cd2a0da587cc39"
+  ami-nginx         = "ami-0ba600043349cd6e9"
   desired_capacity  = 1
   min_size          = 1
   max_size          = 2
@@ -87,11 +87,11 @@ module "AutoScaling" {
 # Module for Elastic Filesystem; this module will create elastic file system in the webservers availablity
 # zone and allow traffic from the webservers
 
-# module "EFS" {
-#   source       = "./modules/EFS"
-#   efs-subnet-1 = module.VPC.private_subnets-1
-#   efs-subnet-2 = module.VPC.private_subnets-2
-#   efs-sg       = [module.security.datalayer-sg]
-#   account_no   = var.account_no
-# }
+module "EFS" {
+  source       = "./modules/EFS"
+  efs-subnet-1 = module.VPC.private_subnets-1
+  efs-subnet-2 = module.VPC.private_subnets-2
+  efs-sg       = [module.security.datalayer-sg]
+  account_no   = var.account_no
+}
 
