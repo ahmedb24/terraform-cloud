@@ -21,8 +21,8 @@ git clone https://github.com/ahmedb24/terraform-cloud.git
 
 # install python3.9, botocore, ansible and awscli
 sudo yum install python3
-sudo python3.9 -m pip install botocore
 sudo python3.9 -m pip install boto3
+sudo python3.9 -m pip install botocore
 sudo python3 -m pip install PyMySQL
 sudo python3 -m pip install mysql-connector-python
 sudo python3 -m pip install --upgrade setuptools

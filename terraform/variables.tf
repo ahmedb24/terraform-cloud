@@ -31,7 +31,7 @@ variable "private_sn_count" {
 }
 
 variable "max_subnets" {
-  default = 10
+  default = 20
 }
 
 variable "name" {

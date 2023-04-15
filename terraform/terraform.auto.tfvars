@@ -24,7 +24,7 @@ account_no = "767423351130"
 
 master-username = "ahmed"
 
-master-password = "devopspbl"
+master-password = "devopspblproject"
 
 tags = {
   Enviroment      = "production"
